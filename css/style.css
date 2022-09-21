@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+/* inicia nav */
+.nav p{
+    color: black;
+    font-size: 3.5rem;
+    font-family: 'Ms Madi', cursive;
+}
+.nav a {
+    text-decoration: none;
+}
+.nav{
+    width: 100%;
+    height: auto;
+    background-color: rgb(232, 232, 232);
+}
+.nav ul li a{
+    margin: 15px;
+    color: black;
+    text-decoration: none;
+    font-family:'Roboto', sans-serif;
+    font-size: 1.2rem;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    font-weight:bold;
+}
+.nav ul li a:hover{
+    color:black;
+    font-weight: 600px;
+    background-size: 100% 2px;
+}
+.text_curso{
+    width: 200px;
+}
+/* ends nav */
+/* inicia header */
+.header{
+    width: 100%;
+    height:33rem;
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+}
+.header_contenido{
+    background-color: rgb( 0 0 0 / 60%);
+    width: 100%;
+    height:33rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header h1{
+    color: rgb(232, 232, 232);
+    font-family:'Roboto', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+}
+/* ends header */
+/* inicia main */
+main section article p{
+    font-family:'Roboto', sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 5px;
+}
+main h2,h3{
+    font-size: 1.2rem;
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 60px;
+    padding: 10px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 5px;
+}
+main article{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+main img{
+    margin-top:10px;
+}
+/* ends main */
+/* inicia form */
+form{
+    box-shadow: 0 0 40px 1px rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    margin-left: 70px;
+}
+.form-horizontal{
+    width: 50%;
+    height: auto;
+}
+.form-horizontal h3{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.btn-primary{
+    width: 30%;
+    font-weight: bold;
+}
+/* ends form */
+/* inicia footer */
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(232, 232, 232);
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.footer__item{
+    margin: 10px;
+}
+.footer h4{
+    margin: 5px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+/* ends footer */
+/* inicia sobre mí */
+.main__sobre-mí p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+main h1{
+    font-size: 1.8rem;
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 5px;
+}
+.main_card{
+    margin: 20px;
+    box-shadow: 0 0 40px 2px rgba(0,0,0,0.4);
+    border-radius: 5px;
+}
+/* ends sobre mí */
+/* inicia servicios */
+.main_servicios p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+}
+/* ends servicios */
+/* inicia cursos */
+.main_video{
+    margin-top:50px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 70vh;
+    box-shadow: 0 0 40px 1px rgba(0,0,0,0.4);
+}
+.video{
+    width:215vh;
+    height:80vh;
+    align-content:center;
+}
+/* ends cursos */
