@@ -7,7 +7,7 @@
 /* inicia nav */
 .nav p{
     color: black;
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-family: 'Ms Madi', cursive;
 }
 .nav a {
@@ -94,11 +94,12 @@ form{
     box-shadow: 0 0 40px 1px rgba(0,0,0,0.4);
     padding: 20px;
     border-radius: 10px;
-    width: 70%;
-    margin-left: 70px;
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 40px;
 }
 .form-horizontal{
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 .form-horizontal h3{
