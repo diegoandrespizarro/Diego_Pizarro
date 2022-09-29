@@ -1,0 +1,47 @@
+main section article p{
+    font-family: $font-roboto;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 5px;
+}
+main h2,h3{
+    font-size: 1.2rem;
+    font-family:$font-roboto;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 60px;
+    padding: 10px;
+    background-color:$colorBase;
+    border-radius: 5px;
+}
+main article{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+main img{
+    margin-top:10px;
+}
+
+form{
+    box-shadow: 0 0 40px 1px rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+.form-horizontal{
+    width: 100%;
+    height: auto;
+}
+.form-horizontal h3{
+    text-align: center;
+    font-family: $font-roboto;
+    font-weight: bold;
+}
+.btn-primary{
+    width: 30%;
+    font-weight: bold;
+}

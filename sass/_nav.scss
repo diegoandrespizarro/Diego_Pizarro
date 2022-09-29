@@ -1,0 +1,37 @@
+
+.nav{
+    width: 100%;
+    height: auto;
+    background-color: $colorBase;
+    a {
+        text-decoration: none;
+        p{
+            color: black;
+            font-size: 2rem;
+            font-family: $font-ms ;
+        }
+    }
+    ul li a{
+        margin: 15px;
+        color: $colorDark;
+        text-decoration: none;
+        font-family:$font-roboto;
+        font-size: 1.2rem;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+        font-weight:bold;
+        &:hover{
+        color:black;
+        font-weight: 600px;
+        background-size: 100% 2px;
+        }
+        
+    }
+    
+    .text_curso{
+        width: 200px;
+    }
+}

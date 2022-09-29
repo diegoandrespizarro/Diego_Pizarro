@@ -1,0 +1,24 @@
+{
+  "name": "preentrega2-diego_pizarro",
+  "version": "1.0.0",
+  "description": "Migrando proyecto a SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+		"sass:watch": "sass --watch sass/main.scss  css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegoandrespizarro/PreEntrega2_Diego_Pizarro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegoandrespizarro/PreEntrega2_Diego_Pizarro/issues"
+  },
+  "homepage": "https://github.com/diegoandrespizarro/PreEntrega2_Diego_Pizarro#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
