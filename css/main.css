@@ -16,8 +16,18 @@
 }
 .nav a p {
   color: black;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: "Ms Madi", cursive;
+}
+@media (min-width: 280px) and (max-width: 390px) {
+  .nav a p {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 200px) and (max-width: 280px) {
+  .nav a p {
+    font-size: 1.5rem;
+  }
 }
 .nav ul li a {
   margin: 15px;
@@ -37,7 +47,8 @@
   font-weight: 600px;
   background-size: 100% 2px;
 }
-.nav .text_curso {
+
+.text_curso {
   width: 200px;
 }
 
@@ -62,33 +73,32 @@
   text-align: center;
 }
 
-main section article p {
-  font-family: "Roboto", sans-serif;
-  font-size: 0.9rem;
-  text-align: center;
-  margin: 5px;
-}
-
-main h2, h3 {
+main h2, main h3 {
   font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
   text-align: center;
   font-weight: bold;
+  margin-top: 5px;
   margin-bottom: 60px;
   padding: 10px;
   background-color: rgb(232, 232, 232);
   border-radius: 5px;
 }
-
-main article {
-  display: flex;
+main img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main section article {
   flex-direction: column;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-
-main img {
-  margin-top: 10px;
+main section article p {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 5px;
 }
 
 form {
@@ -104,7 +114,6 @@ form {
   width: 100%;
   height: auto;
 }
-
 .form-horizontal h3 {
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -124,6 +133,7 @@ form {
   text-align: center;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .footer__item {
   margin: 10px;
@@ -151,7 +161,7 @@ form {
 .main_servicios p {
   text-align: center;
   font-family: "Roboto", sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .main_video {
@@ -167,5 +177,3 @@ form {
   height: 80vh;
   align-content: center;
 }
-
-/*# sourceMappingURL=main.css.map */

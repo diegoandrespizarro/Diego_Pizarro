@@ -1,0 +1,14 @@
+//mixins//
+@mixin flex ($display,$justify,$align){
+    flex-direction: column;
+    display: $display;
+    justify-content:$justify;
+    align-items: $align;
+}
+
+@mixin center ($display,$justify,$align){
+    display: $display;
+    justify-content:$justify;
+    align-items: $align;
+}
+

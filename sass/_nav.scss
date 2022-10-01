@@ -7,31 +7,40 @@
         text-decoration: none;
         p{
             color: black;
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-family: $font-ms ;
+            @media(min-width: 280px) and (max-width:390px){
+                font-size: 2rem;
+            }
+            @media(min-width: 200px) and (max-width:280px){
+                font-size: 1.5rem;
+            }
         }
     }
-    ul li a{
-        margin: 15px;
-        color: $colorDark;
-        text-decoration: none;
-        font-family:$font-roboto;
-        font-size: 1.2rem;
-        background-image: linear-gradient(currentColor, currentColor);
-        background-position: 0% 100%;
-        background-repeat: no-repeat;
-        background-size: 0% 2px;
-        transition: background-size .3s;
-        font-weight:bold;
-        &:hover{
-        color:black;
-        font-weight: 600px;
-        background-size: 100% 2px;
-        }
-        
-    }
-    
-    .text_curso{
-        width: 200px;
+    ul{
+        li{
+            a{
+                margin: 15px;
+                color: $colorDark;
+                text-decoration: none;
+                font-family:$font-roboto;
+                font-size: 1.2rem;
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
+                font-weight:bold;
+                &:hover{
+                    color:black;
+                    font-weight: 600px;
+                    background-size: 100% 2px;
+                }
+            }
+        } 
     }
 }
+.text_curso{
+        width: 200px;
+    }
+

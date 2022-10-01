@@ -4,12 +4,11 @@
     background-color: $colorBase;
     margin-top: 40px;
     text-align: center;
-    display: flex;
-    justify-content: center;
+    @include center(flex,center,center);
     &__item{
         margin: 10px;
     }
-    & h4{
+    h4{
         margin: 5px;
         font-size: 1rem;
         font-family: $font-roboto;
