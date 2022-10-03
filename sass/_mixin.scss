@@ -5,7 +5,6 @@
     justify-content:$justify;
     align-items: $align;
 }
-
 @mixin center ($display,$justify,$align){
     display: $display;
     justify-content:$justify;
