@@ -6,9 +6,9 @@ En el arranque del curso tenía previsto otro tipo de diseño pero al transcurri
 Saludos y gracias.
 
 ## 🔗 Links
-[![Github](https://github.com/diegoandrespizarro/PreEntrega2_Diego_Pizarro.git)
-[![Githubpage](https://diegoandrespizarro.github.io/PreEntrega2_Diego_Pizarro/)
-[![netlify](https://diegopizarro.netlify.app)
+https://github.com/diegoandrespizarro/PreEntrega2_Diego_Pizarro.git
+https://diegoandrespizarro.github.io/PreEntrega2_Diego_Pizarro/
+https://diegopizarro.netlify.app
 
 
 
