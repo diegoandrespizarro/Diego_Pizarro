@@ -164,6 +164,11 @@ form {
   font-size: 0.8rem;
 }
 
+.btn {
+  margin: 10px;
+  padding: 10px;
+}
+
 .main_video {
   margin-top: 50px;
   margin-bottom: 50px;
