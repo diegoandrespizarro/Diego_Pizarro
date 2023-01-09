@@ -158,29 +158,144 @@ form {
   border-radius: 5px;
 }
 
-.main_servicios p {
+.card {
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+}
+.card p {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 0.8rem;
 }
 
 .btn {
-  margin: 10px;
-  padding: 10px;
+  width: 200px;
+  height: 60px;
+  font-size: 15px;
+  text-align: center;
+  align-items: center;
 }
 
-.main_video {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width: 100%;
-  height: 70vh;
-  box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.4);
-}
-
-.video {
-  width: 215vh;
-  height: 80vh;
+#contenedor {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
   align-content: center;
+}
+
+.imagen {
+  max-width: 500%;
+}
+
+a {
+  cursor: pointer;
+}
+
+.alerta {
+  font-weight: 700;
+}
+
+body {
+  background-color: #E3D8D6;
+  overflow-x: hidden;
+}
+
+.modal-contenedor {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.img-carrito {
+  width: 200px;
+  padding: 20px;
+}
+
+.modal-content {
+  background-color: #E3D8D6;
+}
+
+.parrafo {
+  font-weight: 900;
+  font-style: italic;
+}
+
+#precioTotal {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.boton {
+  opacity: 0;
+}
+
+.img-carritoPedido {
+  width: 200px;
+  padding: 20px;
+}
+
+.spinner {
+  margin: 100px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  -webkit-animation: sk-rotate 2s infinite linear;
+  animation: sk-rotate 2s infinite linear;
+}
+
+.dot1, .dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #333;
+  border-radius: 100%;
+  -webkit-animation: sk-bounce 2s infinite ease-in-out;
+  animation: sk-bounce 2s infinite ease-in-out;
+}
+
+.dot2 {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+@-webkit-keyframes sk-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes sk-rotate {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes sk-bounce {
+  0%, 100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes sk-bounce {
+  0%, 100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -13,12 +13,31 @@
     <!-- ANIMATE CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Mi css -->
     <link rel="stylesheet" href="css/main.css">
     <title>DIEGO PIZARRO - Freelancer</title>
 </head>
 <body>
+    <!-- inicia header -->
+    <header>
+        <nav class="navbar navbar-light bg-dark min-vw-100">
+            <h2 class="p-3 text-white"></h2>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a
+                        class="nav-link text-white"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal"
+                        >
+                        <i class="bi bi-cart mx-5" id="carritoContenedor">0</i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ends header -->
     <!-- inicia nav -->
     <nav class="navbar navbar-expand-md navbar-light nav">
         <div class="container-fluid">
@@ -37,13 +56,8 @@
                         <a class="nav-link" href="page/sobre_mí.html">sobre mi</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">cursos</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item text_curso" href="page/curso_backend.html">curso backend</a></li>
-                            <li><a class="dropdown-item text_curso" href="page/curso_frontend.html">curso frontend</a></li>
-                        </ul>
                         <li class="nav-item">
-                            <a class="nav-link" href="img/Curriculum Vitae Diego Pizarro.pdf" download="Diego-Pizarro-cv.pdf">Descargar Cv</a>
+                            <a class="nav-link" href="img/DIEGO ANDRES PIZARRO CV.pdf" download="Diego-Pizarro-cv.pdf">Descargar Cv</a>
                         </li>
                     </li>
                 </ul>
@@ -51,15 +65,15 @@
         </div>
     </nav>
     <!--ends nav  -->
-    <!-- inicia header -->
-    <header class="container-fluid header">
+    <!-- inicia section -->
+    <section class="container-fluid header">
         <div class="row">
             <div class="col header_contenido">
                 <h1>Desarrollador web Freelancer</h1>
             </div>
         </div>
-    </header>
-    <!-- ends header -->
+    </section>
+    <!-- ends section -->
     <!-- inicia main -->
     <main class="container-fluid">
         <section class="py-3">
@@ -120,6 +134,46 @@
         </section>
     </main>
     <!-- ends main -->
+    <!-- inicia container carrito -->
+    <div class="container-xl">
+        <div class="modal" tabindex="-1" role="dialog" id="modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Carrito</h5>
+                <button
+                type="button"
+                class="close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                >
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" id="vaciarCarrito">
+                Vaciar carrito
+                </button>
+                <button type="button" id="procesarCompra" class="btn btn-primary">
+                Continuar compra
+                </button>
+                <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+                >
+                Cerrar
+                </button>
+
+                <span>Precio total:</span>
+                <p class="text-center" id="precioTotal"></p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- ends container carrito -->
     <!-- inicia footer -->
     <footer class="container-fluid footer">
         <div class="row">
@@ -137,6 +191,10 @@
         </div>
     </footer>
     <!-- ends footer -->
+    <!-- script JS -->
+    <script src="./js/app.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- wow js -->
     <script src="js/wow.min.js"></script>
     <script>
@@ -144,6 +202,5 @@
     </script>
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="./js/main.js"></script>
 </body>
 </html>
