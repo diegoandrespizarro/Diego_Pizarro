@@ -121,7 +121,6 @@ const mostrarCarrito = () => {
     modalBody.innerHTML = "";
     carrito.forEach((prod) => {
       const { id, nombre, precio, desc, img, cantidad } = prod;
-      console.log(modalBody);
       modalBody.innerHTML += `
       <div class="modal-contenedor">
         <div>
@@ -141,13 +140,11 @@ const mostrarCarrito = () => {
   }
 
   if (carrito.length === 0) {
-    console.log("Nada");
     modalBody.innerHTML = `
     <p class="text-center text-primary parrafo">¡Aun no agregaste nada!</p>
     `;
-  } else {
-    console.log("Algo");
-  }
+  } 
+
   carritoContenedor.textContent = carrito.length;
 
   if (precioTotal) {
@@ -222,10 +219,10 @@ function procesarPedido() {
     emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Finalizar compra';
-      alert('Correo enviado!');
+      Swal.fire('Correo enviado!');
     }, (err) => {
       btn.value = 'Finalizar compra';
-      alert(JSON.stringify(err));
+      Swal.fire(JSON.stringify(err));
     });
     
     const spinner = document.querySelector('#spinner')
